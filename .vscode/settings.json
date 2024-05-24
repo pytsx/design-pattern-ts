@@ -1,0 +1,6 @@
+{
+  "code-runner.defaultLanguage": "typescript",
+  "code-runner.executorMap": {
+    "typescript": "pnpm dev"
+  }
+}
