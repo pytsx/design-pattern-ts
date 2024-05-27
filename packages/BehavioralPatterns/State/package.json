@@ -1,10 +1,10 @@
 {
-  "name": "designpattern",
+  "name": "state",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "cls && pnpx ts-node --files packages/index.ts"
+    "dev": "cls && pnpx ts-node --files ./src/index.ts"
   },
   "author": "",
   "license": "ISC",

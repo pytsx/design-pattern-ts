@@ -14,7 +14,7 @@ function getTimeDifference(a: number | undefined, b: number) {
   return (a || new Date().getTime()) - b
 }
 
-export default ( () => {
+export default (() => {
   const timeTrackerMap = new Map<string, ITimeTracker>()
   let currentTracker: string | null = null
   const _CalculateTimeSpend = (name: string): number => (timeTrackerMap.has(name)
@@ -28,7 +28,7 @@ export default ( () => {
     Track: (trackerName?: string) => {
       const name = trackerName || `default_${timeTrackerMap.size}`
       currentTracker = name
-      
+
       timeTrackerMap.set(name, {
         name,
         start: new Date().getTime(),
